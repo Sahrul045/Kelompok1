@@ -6,74 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MakanBijak | Beranda</title>
     <link href="dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
 
-    <header class="flex items-center absolute top-0 bg-transparent w-full left-0 z-10" id="header">
-        <div class="container">
-            <div class="flex justify-between relative">
-                <div class="px-4 flex items-center gap-2 lg:gap-4">
-                    <h2 class="py-6 px-0 text-lg font-semibold lg:text-xl">Makan<span class="text-main">Bijak</span>
-                    </h2>
-                    <div class="pt-1">
-                        <input id="input-box"
-                            class="font-serif placeholder:text-slate-500 rounded-full py-[3px] lg:py-2   shadow-sm pl-[2px] w-[140px] lg:w-[250px] outline-none border"
-                            type="search" placeholder="Cari...">
-                        <div class="absolute result-box mt-4 overflow-y-scroll max-h-32 bg-white lg:bg-none">
-                        </div>
-                    </div>
 
-                </div>
-                <div class="flex items-center px-4">
-                    <button class="absolute block right-4 lg:hidden" id="button">
-                        <span class="btn duration-300 ease-in-out origin-top-left"></span>
-                        <span class="btn duration-300 ease-in-out "></span>
-                        <span class="btn duration-300 ease-in-out origin-bottom-left"></span>
-                    </button>
-
-                    <nav id="nav-menu"
-                        class="bg-main absolute max-w-[250px] py-5 right-4 rounded-lg top-full hidden lg:block lg:max-w-full w-full lg:bg-transparent lg:rounded-none lg:static">
-                        <ul class="block lg:flex">
-
-
-
-
-                            <li class="group">
-                                <a href="#"
-                                    class="text-white lg:text-slate-800 py-2  flex mx-8 group-hover:text-main">Beranda</a>
-                            </li>
-                            <li class="group">
-                                <a href="menu/desert.html"
-                                    class="text-white lg:text-slate-800 py-2 flex mx-8 group-hover:text-main">Desert
-                                </a>
-                            </li>
-                            <li class="group">
-                                <a href="menu/minuman.html"
-                                    class="text-white lg:text-slate-800 py-2 flex mx-8 group-hover:text-main">Minuman</a>
-                            </li>
-                            <li class="group">
-                                <a href="menu/diets.html"
-                                    class="text-white lg:text-slate-800 py-2 flex mx-8 group-hover:text-main">Diets</a>
-                            </li>
-                            <li class="group">
-                                <a href="menu/sarapan.html"
-                                    class="text-white lg:text-slate-800 py-2 flex mx-8 group-hover:text-main">Sarapan</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-
-                </div>
-            </div>
-
-
-        </div>
-    </header>
+    <?php include('inc-header.php') ?>
 
     <!-- hero section start -->
 
@@ -81,14 +21,12 @@
         <div class="w-full px-4">
 
             <!-- Carrousel Image -->
-            <div class="w-full  h-[160px] lg:h-[300px] mt-10  bg-center bg-cover rounded-md"
-                style="background-image: url(img/assortment-with-different-meals-wooden-table.jpg);">
+            <div class="w-full  h-[160px] lg:h-[300px] mt-10  bg-center bg-cover rounded-md" style="background-image: url(img/assortment-with-different-meals-wooden-table.jpg);">
                 <div class="w-full h-full">
                     <div class="flex h-full">
                         <div class="w-full h-full bg-slate-700 bg-opacity-45 m-auto rounded-md flex overflow-hidden">
                             <span class="block m-auto">
-                                <svg class="mx-auto" width="110" xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                    viewBox="0.00 0.00 1225.00 1147.00">
+                                <svg class="mx-auto" width="110" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 1225.00 1147.00">
                                     <path fill="#ffffff" d="
                 M 522.30 877.37
                 A 1.50 1.50 0.0 0 0 519.90 876.94
@@ -219,8 +157,7 @@
                   Z" />
                                 </svg>
                                 <div class="text-center p-2">
-                                    <h2 class="text-sm text-center font-bold lg:text-2xl text-white">Makan<span
-                                            class="text-main">Bijak</span></h2>
+                                    <h2 class="text-sm text-center font-bold lg:text-2xl text-white">Makan<span class="text-main">Bijak</span></h2>
                                     <p class="hidden lg:block text-center text-sm lg:text-lg lg:w-full">
                                         Bijak dalam Setiap Resep, Kesehatan di Setiap Sajian.
                                     </p>
@@ -279,8 +216,7 @@
             <!-- Tulis Resep Section -->
             <div class="flex items-center justify-center pt-16 relative">
 
-                <a href="menu.html"
-                    class="px-4 py-2 border border-main text-main text-base group hover:border-transparent hover:text-white hover:bg-main transition duration-300 ease-in-out">Menu
+                <a href="menu.html" class="px-4 py-2 border border-main text-main text-base group hover:border-transparent hover:text-white hover:bg-main transition duration-300 ease-in-out">Menu
                     <i class="fa-solid fa-pen-to-square text-main ml-[2px] group-hover:text-white"></i>
                 </a>
 
@@ -305,8 +241,7 @@
                     <p class="font-bold my-4 text-xl text-main">Brokoli ayam lada hitam</p>
                     <p class="mb-6">Brokoli Ayam Lada Hitam adalah hidangan lezat yang menggabungkan brokoli, dada ayam,
                         saus lada hitam, dan bumbu-bumbu yang kaya rasa. </p>
-                    <a href="saran menu/brokoli_ayam.html"
-                        class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                    <a href="saran menu/brokoli_ayam.html" class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                 </div>
             </div>
@@ -316,8 +251,7 @@
                     <p class="font-bold my-4 text-xl text-main">Salad buah</p>
                     <p class="mb-6">Salad Buah adalah hidangan segar yang menggabungkan berbagai macam buah-buahan
                         dengan saus yogurt lezat.</p>
-                    <a href="saran menu/salad_buah.html"
-                        class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                    <a href="saran menu/salad_buah.html" class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                 </div>
             </div>
@@ -327,8 +261,7 @@
                     <p class="font-bold my-4 text-xl text-main">Pudding custard</p>
                     <p class="mb-6">Pudding Custard adalah hidangan penutup lezat yang dihiasi dengan berbagai
                         buah-buahan segar. </p>
-                    <a href="saran menu/puding_custard.html"
-                        class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                    <a href="saran menu/puding_custard.html" class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                 </div>
             </div>
@@ -338,8 +271,7 @@
                     <p class="font-bold my-4 text-xl text-main">Chicken steak</p>
                     <p class="mb-6">Chicken Steak adalah hidangan lezat dengan dada ayam panggang yang disajikan dengan
                         saus yang kaya rasa. </p>
-                    <a href="saran menu/chicken_steak.html"
-                        class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                    <a href="saran menu/chicken_steak.html" class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                 </div>
             </div>
@@ -349,8 +281,7 @@
                     <p class="font-bold my-4 text-xl text-main">Es timun jeruk nipis</p>
                     <p class="mb-6">Es Timun Jeruk Nipis adalah minuman segar yang menyegarkan dengan kombinasi timun,
                         melon, dan jeruk nipis. </p>
-                    <a href="saran menu/es_timun_nipis.html"
-                        class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                    <a href="saran menu/es_timun_nipis.html" class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                 </div>
             </div>
@@ -360,8 +291,7 @@
                     <p class="font-bold my-4 text-xl text-main">Mango lessi</p>
                     <p class="mb-6">Mango Lessi adalah minuman segar yang terbuat dari mangga harum manis, yoghurt plain
                         cair, yoghurt plain kental, dan jeruk nipis. </p>
-                    <a href="saran menu/mango_lessi.html"
-                        class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                    <a href="saran menu/mango_lessi.html" class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                 </div>
             </div>
@@ -394,8 +324,7 @@
                 <div class="inline-block p-4">
                     <div class="bg-white p-4 rounded shadow-md">
                         <a href="menu/desert.html">
-                            <img src="img/woman-eats-marshmallow-cake-with-strawberry.jpg" alt="Gambar 2"
-                                class="mb-2 rounded-md">
+                            <img src="img/woman-eats-marshmallow-cake-with-strawberry.jpg" alt="Gambar 2" class="mb-2 rounded-md">
                             <div class="flex items-center justify-between">
                                 <h2 class="text-base font-semibold">7 Rekomendasi desert sehat untukmu</h2>
                                 <!-- Isi konten lainnya -->
@@ -429,8 +358,7 @@
         </div>
 
         <div class="flex mt-4">
-            <a href="menu.html"
-                class="mx-auto px-4 py-2 bg-main border border-main text-white text-base group hover:border-main hover:text-main hover:bg-transparent transition duration-300 ease-in-out">Lainnya..
+            <a href="menu.html" class="mx-auto px-4 py-2 bg-main border border-main text-white text-base group hover:border-main hover:text-main hover:bg-transparent transition duration-300 ease-in-out">Lainnya..
 
             </a>
         </div>
@@ -443,30 +371,24 @@
     <div class="container">
         <h2 class="text-lg pt-6 lg:pl-10 font-semibold  lg:text-2xl">Bahan Masakmu</h2>
         <div class="flex gap-2 pt-6 lg:pl-10">
-            <button onclick="showContent('content1')"
-                class="bg-main text-white px-[10px] lg:px-4 py-2 rounded flex items-center">
-                <div class="w-5 h-5 border border-white rounded-full items-center justify-center bg-cover bg-center self-center overflow-hidden"
-                    style="background-image: url(img/telur.jpg);">
+            <button onclick="showContent('content1')" class="bg-main text-white px-[10px] lg:px-4 py-2 rounded flex items-center">
+                <div class="w-5 h-5 border border-white rounded-full items-center justify-center bg-cover bg-center self-center overflow-hidden" style="background-image: url(img/telur.jpg);">
 
 
                 </div>
                 <p class="ml-1 text-white pr-2">Telur</p>
             </button>
 
-            <button onclick="showContent('content2')"
-                class="bg-main text-white px-[10px] lg:px-4 py-2 rounded flex items-center">
-                <div class="w-5 h-5 border border-white rounded-full px-1 items-center justify-center bg-cover bg-center self-center overflow-hidden"
-                    style="background-image: url(img/tahu.png);">
+            <button onclick="showContent('content2')" class="bg-main text-white px-[10px] lg:px-4 py-2 rounded flex items-center">
+                <div class="w-5 h-5 border border-white rounded-full px-1 items-center justify-center bg-cover bg-center self-center overflow-hidden" style="background-image: url(img/tahu.png);">
 
 
                 </div>
                 <p class="ml-1 text-white pr-2">Tahu</p>
             </button>
 
-            <button onclick="showContent('content3')"
-                class="bg-main border text-white px-[10px] lg:px-4 py-2 rounded flex items-center">
-                <div class="w-5 h-5 border border-white rounded-full items-center justify-center bg-cover bg-center self-center overflow-hidden"
-                    style="background-image: url(img/terong.png);">
+            <button onclick="showContent('content3')" class="bg-main border text-white px-[10px] lg:px-4 py-2 rounded flex items-center">
+                <div class="w-5 h-5 border border-white rounded-full items-center justify-center bg-cover bg-center self-center overflow-hidden" style="background-image: url(img/terong.png);">
 
 
                 </div>
@@ -479,8 +401,7 @@
         <div id="content1" class="content mt-4">
             <div class="flex flex-wrap justify-center w-full px-4 xl:mx-auto">
                 <div class="lg:w-1/3 w-full mb-10 lg:p-4">
-                    <img src="img/sipaling sarapan/sandwiches-with-french-fries.jpg" alt="" width="w-full"
-                        class="rounded-lg shadow-lg">
+                    <img src="img/sipaling sarapan/sandwiches-with-french-fries.jpg" alt="" width="w-full" class="rounded-lg shadow-lg">
                     <div class="px-2">
                         <p class="font-bold my-4 text-xl text-main">cheesy egg sandwich</p>
                         <p class="mb-6">Cheesy Egg Sandwich adalah sarapan yang lezat dengan kombinasi telur rebus,
@@ -489,35 +410,30 @@
                             dan
                             selada air di dalam roti tawar.
                             Isian ini memberikan cita rasa yang kaya dan memuaskan.</p>
-                        <a href="saran menu/cheesy_egg_sandwich.html"
-                            class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                        <a href="saran menu/cheesy_egg_sandwich.html" class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                     </div>
                 </div>
                 <div class="lg:w-1/3 w-full mb-10 lg:p-4">
-                    <img src="img/sipaling sarapan/high-angle-sandwiches-slate-with-egg-avocado.jpg" alt=""
-                        width="w-full" class="rounded-lg shadow-lg">
+                    <img src="img/sipaling sarapan/high-angle-sandwiches-slate-with-egg-avocado.jpg" alt="" width="w-full" class="rounded-lg shadow-lg">
                     <div class="px-2">
                         <p class="font-bold my-4 text-xl text-main">Avocado toast dengan telur dan sosis</p>
                         <p class="mb-6"> Avocado Toast dengan Telur dan Sosis adalah sarapan lezat dengan kombinasi roti
                             panggang, alpukat,
                             telur, sosis, dan bumbu-bumbu yang nikmat.</p>
-                        <a href="saran menu/egg_avocado.html"
-                            class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                        <a href="saran menu/egg_avocado.html" class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                     </div>
                 </div>
                 <div class="lg:w-1/3 w-full mb-10 lg:p-4">
-                    <img src="img/sipaling sarapan/telur dadar saus keju.jpg" alt="" width="w-full"
-                        class="rounded-lg shadow-lg">
+                    <img src="img/sipaling sarapan/telur dadar saus keju.jpg" alt="" width="w-full" class="rounded-lg shadow-lg">
                     <div class="px-2">
                         <p class="font-bold my-4 text-xl text-main">Telur dadar keju dan saus tomat</p>
                         <p class="mb-6">Telur Dadar Keju Saus Tomat adalah hidangan telur dadar yang lezat dengan
                             tambahan
                             keju meleleh dan saus
                             tomat yang nikmat.</p>
-                        <a href="saran menu/telur_dadar_keju.html"
-                            class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                        <a href="saran menu/telur_dadar_keju.html" class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                     </div>
                 </div>
@@ -537,8 +453,7 @@
                             tiram,
                             dan berbagai bumbu
                             rempah yang kaya rasa.</p>
-                        <a href="saran menu/tumis_tahu_jamur.html"
-                            class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                        <a href="saran menu/tumis_tahu_jamur.html" class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                     </div>
                 </div>
@@ -550,8 +465,7 @@
                             cincang
                             yang disajikan dengan
                             saus pedas dan aromatik.</p>
-                        <a href="saran menu/mapo_tofu.html"
-                            class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                        <a href="saran menu/mapo_tofu.html" class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                     </div>
                 </div>
@@ -563,8 +477,7 @@
                             dan
                             keju, dikukus dengan
                             bumbu yang meresap.</p>
-                        <a href="saran menu/pepes_tahu_keju.html"
-                            class="py-2 px-4 bg-me text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                        <a href="saran menu/pepes_tahu_keju.html" class="py-2 px-4 bg-me text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                     </div>
                 </div>
@@ -578,43 +491,37 @@
         <div id="content3" class="content mt-4 hidden">
             <div class="flex flex-wrap justify-center w-full px-4 xl:mx-auto">
                 <div class="lg:w-1/3 w-full mb-10 lg:p-4">
-                    <img src="img/saran menu/terong panggang lada hitam.png" alt="" width="w-full"
-                        class="rounded-lg shadow-lg">
+                    <img src="img/saran menu/terong panggang lada hitam.png" alt="" width="w-full" class="rounded-lg shadow-lg">
                     <div class="px-2">
                         <p class="font-bold my-4 text-xl text-main">Terong panggang lada hitam</p>
                         <p class="mb-6">Terong Panggang Lada Hitam adalah hidangan lezat yang menghadirkan cita rasa
                             pedas
                             dan gurih pada terong
                             panggang.</p>
-                        <a href="saran menu/terong_panggang.html"
-                            class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                        <a href="saran menu/terong_panggang.html" class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                     </div>
                 </div>
                 <div class="lg:w-1/3 w-full mb-10 lg:p-4">
-                    <img src="img/saran menu/terong dengan saus teriyaki.png" alt="" width="w-full"
-                        class="rounded-lg shadow-lg">
+                    <img src="img/saran menu/terong dengan saus teriyaki.png" alt="" width="w-full" class="rounded-lg shadow-lg">
                     <div class="px-2">
                         <p class="font-bold my-4 text-xl text-main">Terong panggang saus teriyaki</p>
                         <p class="mb-6">Terong Panggang Saus Teriyaki adalah hidangan lezat dengan terong yang
                             dipanggang
                             dan disajikan dengan
                             saus teriyaki yang kaya rasa</p>
-                        <a href="saran menu/terong_teriyaki.html"
-                            class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                        <a href="saran menu/terong_teriyaki.html" class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                     </div>
                 </div>
                 <div class="lg:w-1/3 w-full mb-10 lg:p-4">
-                    <img src="img/saran menu/terong bakar dengan sambal.png" alt="" width="w-full"
-                        class="rounded-lg shadow-lg">
+                    <img src="img/saran menu/terong bakar dengan sambal.png" alt="" width="w-full" class="rounded-lg shadow-lg">
                     <div class="px-2">
                         <p class="font-bold my-4 text-xl text-main">Terong bakar sambal tomat</p>
                         <p class="mb-6"> Terong Bakar Sambal Tomat adalah hidangan lezat dengan terong yang dibakar dan
                             disajikan dengan sambal
                             tomat yang pedas dan nikmat.</p>
-                        <a href="saran menu/terong_bakar_tomat.html"
-                            class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
+                        <a href="saran menu/terong_bakar_tomat.html" class="py-2 px-4 bg-main text-white rounded-md font-semibold hover:opacity-70 transition duration-300">Kunjungi</a>
 
                     </div>
                 </div>
@@ -636,11 +543,7 @@
                 <!-- Content 1 -->
                 <div class="w-full sm:w-1/2 px-2 py-[10px] lg:p-4">
                     <!-- Video Embed Code -->
-                    <iframe width="100%" height="200"
-                        src="https://www.youtube.com/embed/O3wa46rL12A?si=fuT79ZCTgNRzDsb4" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/O3wa46rL12A?si=fuT79ZCTgNRzDsb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <!-- Isi konten lainnya -->
 
                 </div>
@@ -649,11 +552,7 @@
                 <div class="w-full sm:w-1/2 px-2 py-[10px] lg:p-4">
 
                     <!-- Video Embed Code -->
-                    <iframe width="100%" height="200"
-                        src="https://www.youtube.com/embed/cvm0oRajcAM?si=FoPC51tWFCSaZiOZ" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/cvm0oRajcAM?si=FoPC51tWFCSaZiOZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <!-- Isi konten lainnya -->
 
                 </div>
@@ -662,11 +561,7 @@
                 <div class="w-full sm:w-1/2 px-2 py-[10px] lg:p-4">
 
                     <!-- Video Embed Code -->
-                    <iframe width="100%" height="200"
-                        src="https://www.youtube.com/embed/eM7WEzI63DM?si=qzZ7JFaKCT_FP92L" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/eM7WEzI63DM?si=qzZ7JFaKCT_FP92L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <!-- Isi konten lainnya -->
 
                 </div>
@@ -675,11 +570,7 @@
                 <div class="w-full sm:w-1/2 px-2 py-[10px] lg:p-4">
 
                     <!-- Video Embed Code -->
-                    <iframe width="100%" height="200"
-                        src="https://www.youtube.com/embed/qivRkn96bd8?si=Ms5zEQkLpmEMGXh_" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/qivRkn96bd8?si=Ms5zEQkLpmEMGXh_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <!-- Isi konten lainnya -->
 
                 </div>
@@ -693,92 +584,7 @@
     <!-- video turotial end -->
 
     <!-- footer start -->
-    <footer class="relative bg-blueGray-200 pt-8 pb-6 bg-secondary text-white ">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-wrap text-left lg:text-left">
-                <div class="w-full lg:w-6/12 px-4">
-                    <h4 class="text-3xl fonat-semibold text-white-500 font-bold uppercase">Makan<span
-                            class="">Bijak</span></h4>
-                    <h5 class="text-lg mt-0 mb-2 text-white-600" id="tentang">
-                        Misi kami adalah membantu masyarakat menuju kehidupan yang lebih sehat dan bugar,
-                        Menghadirkan informasi nutrisi yang akurat dan mudah dimengerti untuk membantu pengguna membuat
-                        keputusan makanan yang informasional dan bijak.
-                    </h5>
-                    <div class="mt-6 lg:mb-0 mb-6">
-                        <button
-                            class="bg-Dark-100 text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                            type="button">
-                            <i class="fab fa-twitter"></i>
-                        </button>
-
-                        <button
-                            class="bg-Dark-100 text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                            type="button">
-                            <i class="fab fa-facebook-square"></i>
-                        </button>
-
-                        <button
-                            class="bg-Dark-100 text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                            type="button">
-                            <i class="fab fa-github"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="w-full lg:w-6/12 px-4">
-                    <div class="flex flex-wrap items-top mb-6">
-                        <div class="w-full lg:w-4/12 px-4 ml-auto">
-                            <span class="block uppercase text-white-500 text-sm font-semibold mb-2">Kategori</span>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a class="text-white-600 hover:text-white-800  block pb-2 text-sm"
-                                        href="menu/desert.html">Desert</a>
-                                </li>
-                                <li>
-                                    <a class="text-white-600 hover:text-white-800  block pb-2 text-sm"
-                                        href="menu/diets.html">Diets</a>
-                                </li>
-                                <li>
-                                    <a class="text-white-600 hover:text-white-800  block pb-2 text-sm"
-                                        href="menu/minuman.html">Minuman Sehat</a>
-                                </li>
-                                <li>
-                                    <a class="text-white-600 hover:text-white-800  block pb-2 text-sm"
-                                        href="menu/sarapan.html">Sarapan</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full lg:w-4/12 px-4">
-                            <span class="block uppercase text-white-500 text-sm font-semibold mb-2">Lainya</span>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a class="text-white-600 hover:text-blueGray-800  block pb-2 text-sm"
-                                        href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
-                                </li>
-                                <li>
-                                    <a class="text-white-600 hover:text-blueGray-800  block pb-2 text-sm"
-                                        href="https://creative-tim.com/privacy?ref=njs-profile">Contact</a>
-                                </li>
-                                <li>
-                                    <a class="text-white-600 hover:text-blueGray-800  block pb-2 text-sm"
-                                        href="https://creative-tim.com/contact-us?ref=njs-profile">Social media</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="my-6 border-blueGray-300">
-            <div class="flex flex-wrap items-center md:justify-between justify-center">
-                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-                    <div class="text-sm text-white-500 py-1">
-                        Copyright © <span id="get-current-year">2023</span><a
-                            href="https://www.creative-tim.com/product/notus-js"
-                            class="text-white-500 hover:text-gray-800"> MAKANBIJAK
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include('inc-footer.php') ?>
 
     <!-- footer end -->
 
@@ -840,7 +646,7 @@
     ];
 
     const keywordToUrlMap = {
-        'Brokoli ayam lada hitam': 'saran menu/brokoli_ayam.html',  // Ganti dengan nama file atau URL yang sesuai
+        'Brokoli ayam lada hitam': 'saran menu/brokoli_ayam.html', // Ganti dengan nama file atau URL yang sesuai
         'Cream soup': 'saran menu/cream_soup.html',
         'Chicken steak': 'saran menu/chicken_steak.html',
         'Salad sayur telur': 'saran menu/salad_sayur_telur.html',
@@ -882,7 +688,7 @@
         'Tumis tahu jamur': 'saran menu/tumis_tahu_jamur.html',
         'Pepes tahu keju': 'saran menu/pepes_tahu_keju.html',
         'Mapo tofu': 'saran menu/mapo_tofu.html',
-        'Pancake pisang':'saran menu/pancake_pisang.html',
+        'Pancake pisang': 'saran menu/pancake_pisang.html',
 
 
 
@@ -893,7 +699,7 @@
     const resultBox = document.querySelector(".result-box");
     const inputBox = document.querySelector("#input-box");
 
-    inputBox.oninput = function () {
+    inputBox.oninput = function() {
         let result = [];
         let input = inputBox.value;
 
@@ -930,9 +736,6 @@
             window.location.href = "search.html?q=" + encodeURIComponent(selectedKeyword);
         }
     }
-
-
-
 </script>
 
 </html>
